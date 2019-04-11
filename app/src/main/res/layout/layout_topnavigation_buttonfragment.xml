@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bluebackground"
+        android:orientation="vertical"
+        android:translationX="0dp"
+        android:translationY="0dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/saveChanges"
+            android:src="@drawable/ic_checkmark"
+            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backbutton_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/backArrow"
+            android:src="@drawable/backbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logoapp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>

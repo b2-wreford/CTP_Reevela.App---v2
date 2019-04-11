@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/layout_topnavigation_buttonfragment"></include>
+
+    <include layout="@layout/layout_center_viewpager"></include>
+    <RelativeLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+        <RelativeLayout
+            android:id="@+id/account_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_profile_border"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp">
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:text="Account Settings:"
+            android:textSize="35sp"
+            android:layout_marginLeft="-10dp"
+            app:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/account_layout1"
+            >
+
+
+        <ListView
+            android:id="@+id/account_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+        </ListView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

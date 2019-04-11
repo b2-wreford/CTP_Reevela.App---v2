@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/user_chat_layout_template"/>
+
+        <!--Button Name = user_profile_link_btn-->
+
+    <!--Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_bar_layout">
+        <include layout="@layout/layout_topnavigation_button"/>
+
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_bar_layout"
+            android:layout_marginTop="100dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

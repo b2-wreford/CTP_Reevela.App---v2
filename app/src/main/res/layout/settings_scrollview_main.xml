@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+               <RelativeLayout
+                android:id="@+id/gender_pref"
+                android:layout_width="390dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_buttonthin">
+
+                <TextView
+                    android:id="@+id/looking_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Looking For:"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:id="@+id/LF_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Male"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="80dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"/>
+
+                <Switch
+                    android:id="@+id/MALE_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/LF_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Female"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="140dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"/>
+
+                <Switch
+                    android:id="@+id/FEMALE_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/LF_both"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Both"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="200dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"/>
+                <Switch
+                    android:id="@+id/BOTH_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/radius_pref"
+                android:layout_width="390dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/gender_pref"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_buttonthin">
+
+                <TextView
+                    android:id="@+id/radius_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Radius:"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:id="@+id/mile_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="miles"
+                    android:paddingLeft="240dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_semibold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <SeekBar
+                    android:id="@+id/radius_seekbar"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="60dp"
+                    android:max="50"
+                    android:progress="0"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/age_pref"
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/radius_pref"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_buttonthin">
+
+                <TextView
+                    android:id="@+id/age_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Age:"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+
+
+
+                <SeekBar
+                    android:id="@+id/minage_seekbar"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:max="50"
+                    android:min="18"
+                    android:progress="0"/>
+
+                <TextView
+                    android:id="@+id/min_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="min"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_semibold"
+                    android:textColor="@color/darkpink"
+                    android:layout_toRightOf="@id/minage_seekbar"
+                    android:layout_toEndOf="@id/minage_seekbar"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <SeekBar
+                    android:id="@+id/maxage_seekbar"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/minage_seekbar"
+                    android:layout_marginLeft="20dp"
+                    android:max="50"
+                    android:min="18"
+                    android:progress="0"/>
+
+                <TextView
+                    android:id="@+id/max_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="max"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_semibold"
+                    android:textColor="@color/darkpink"
+                    android:layout_toRightOf="@id/maxage_seekbar"
+                    android:layout_toEndOf="@id/maxage_seekbar"
+                    android:layout_below="@id/min_field"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notification_pref"
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/age_pref"
+                android:background="@drawable/rounded_buttonthin">
+
+                <TextView
+                    android:id="@+id/notification_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Notifications:"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:id="@+id/push_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Push Notifications"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="80dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"/>
+
+                <Switch
+                    android:id="@+id/push_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/email_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Email"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="140dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"/>
+
+                <Switch
+                    android:id="@+id/email_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/instagram_pref"
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/notification_pref"
+                android:background="@drawable/rounded_buttonthin">
+
+                <TextView
+                    android:id="@+id/instagram_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Connect To Instagram"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:id="@+id/account_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="web"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:onClick="launchInstagram"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="110dp"
+                    android:text="@string/insta_link"
+                    android:textColor="@color/grey"
+                    android:textSize="35sp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/insta_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/instalogo"
+                    android:onClick="launchInstagram"
+                    android:autoLink="web"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

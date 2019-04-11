@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/large1_img_layout">
+
+
+    <include layout="@layout/layout_topnavigation_button_game"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/circ1_img"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:background="@drawable/user_profile_border"
+
+        android:padding="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/userTransImg2"
+        >
+    </ImageView>
+
+
+        <Button
+            android:id="@+id/revmore_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Reveal more"
+            android:textSize="25sp"
+            app:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_buttonthin"
+            android:layout_below="@id/circ1_img"
+            android:transitionName=""/>
+
+        <Button
+            android:id="@+id/stp_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Stop"
+            android:textSize="25sp"
+            app:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_buttonthin"
+            android:layout_toRightOf="@id/revmore_btn"
+            android:layout_below="@id/circ1_img"
+            android:transitionName=""
+            />
+
+        <TextView
+            android:id="@+id/randomUsername"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

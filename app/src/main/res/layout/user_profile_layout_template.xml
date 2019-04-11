@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/user_img"
+            android:layout_width="600dp"
+            android:layout_height="450dp"
+            android:src="@drawable/user_profile_border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            />
+
+        <!--android:background="@drawable/kelly"-->
+
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="450dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:id="@+id/fb_imageview"
+            android:scaleType="centerCrop"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="45sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:layout_below="@id/user_img"
+            />
+        <!--android:text="Kelly, 22"-->
+
+        <!--User Details Section-->
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/user_info"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <!--Education Details-->
+
+            <ImageView
+                android:id="@+id/user_ed_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_education"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/user_ed_img"
+                android:text="University Of the West of England"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/appblue"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <!--Location Details-->
+
+            <ImageView
+                android:id="@+id/user_loc_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_loc_img"
+                android:layout_below="@id/user_ed_img"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/user_loc_img"
+                android:text="4 Miles Away"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/appblue"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"/>
+
+            <!--Game Details-->
+
+            <ImageView
+                android:id="@+id/user_game_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_game_img"
+                android:layout_below="@id/user_loc_img"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/user_game_img"
+                android:text="Tic Tac Toe - Challenge?"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/appblue"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"/>
+
+            <!--Hobby Details-->
+
+            <ImageView
+                android:id="@+id/user_hobby_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_hobby_img"
+                android:layout_below="@id/user_game_img"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/user_hobby_img"
+                android:text="Tennis"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/appblue"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

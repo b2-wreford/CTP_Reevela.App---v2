@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/reveal_1_seen"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:background="@drawable/reveal_section_1">
+
+
+
+
+        <ImageView
+            android:id="@+id/circ1_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:transitionName="image1_transition"
+            >
+        </ImageView>
+        <!--android:src="@drawable/selfie"-->
+
+
+
+        <Button
+            android:id="@+id/reveal_btn1big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/enlarge_1"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="160dp"-->
+            <!--android:layout_marginRight="2dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/ic_enlarge3"-->
+            <!--/>-->
+
+
+    </RelativeLayout>
+
+    <!--Second Image Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_2_seen"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/reveal_1_seen"
+        android:gravity="center"
+        android:background="@drawable/reveal_section_1">
+
+
+
+
+        <ImageView
+            android:id="@+id/circ2_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_margin="3dp"
+            android:scaleType="centerCrop"
+            android:transitionName="image2_transition">
+        </ImageView>
+
+
+
+        <Button
+            android:id="@+id/reveal_btn2big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/enlarge_2"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="160dp"-->
+            <!--android:layout_marginRight="2dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/ic_enlarge3"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+
+    <!--Third info Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_3_seen"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/reveal_1_seen"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/revTV_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/reveal_section_3"
+            android:transitionName="user3_transition"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/reveal_btn3big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="45sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:layout_below="@id/user_img"
+            android:transitionName="@string/userTrans"
+            />
+
+
+        <!--User Details Section-->
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/user_info"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp">
+
+
+            <!--Location Details-->
+
+            <ImageView
+                android:id="@+id/user_loc_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_loc_img"
+                android:layout_below="@id/user_ed_img"
+                android:layout_marginTop="0dp"
+                />
+
+            <TextView
+                android:id="@+id/location_field"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/user_loc_img"
+                android:text="4 Miles Away"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/appblue"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:transitionName="location_field"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

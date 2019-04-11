@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/small_scroll_matches"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingBottom="10dp">
+
+
+            </RelativeLayout>
+
+            <!--LIST OF PRETEND USERS-->
+
+
+            <FrameLayout
+                android:id="@+id/example_user_1"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/small_scroll_matches"
+                android:layout_marginTop="0dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/kelly"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kelly, 22"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hey, How are you?"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/example_user_2"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_1"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user6"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sarah, 21"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nice to meet you"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/example_user_3"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_2"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/jane"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Julie, 21"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hey There!"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/example_user_4"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_3"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sarah"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user4_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jane, 20"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="First time here?"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+
+            <!--DUPLICATED-->
+
+
+
+
+            <FrameLayout
+                android:id="@+id/example_user_5"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_4"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/kelly"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user5_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kelly, 22"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hey, How are you?"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/example_user_6"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_5"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user6"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user6_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sarah, 21"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nice to meet you"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/example_user_7"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_6"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/jane"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user7_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Julie, 21"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hey There!"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/example_user_8"
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/example_user_7"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sarah"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/example_user8_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/pink_rounded_button">
+
+                    <Button
+                        android:id="@+id/example_us8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pink_rounded_button"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jane, 20"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/darkpink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="First time here?"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

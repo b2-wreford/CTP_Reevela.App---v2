@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ReevelaApp</string>
+    <string name="insta_link">Link Account</string>
+    <string name="launchInstagram">Launch an Application From Another App</string>
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="sign_out_fragment">Sign Out</string>
+
+    <!-- Fragment Strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_account_yet_create_one">Ready to Reveal? Create an account.</string>
+
+    <!--Fire Base Messages-->
+    <string name="auth_failed">Failed to Authenticate - Email taken</string>
+    <string name="auth_succ">Login Successful</string>
+
+
+    <!-- Firebase database fields -->
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="field_username">username</string>
+    <string name="field_display_name">display_name</string>
+    <string name="field_website">website</string>
+    <string name="field_description">description</string>
+    <string name="field_location">location</string>
+    <string name="field_phone_number">phone_number</string>
+    <string name="userTrans">user_nameMove</string>
+    <string name="userTransImg1">userTransImg1</string>
+    <string name="userTransImg2">userTransImg2</string>
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/circ3_details_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/layout_top_tabs"></include>
+
+    <RelativeLayout
+    android:id="@+id/reveal_1"
+    android:layout_width="200dp"
+    android:layout_height="400dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginRight="2dp"
+    android:gravity="center">
+
+
+</RelativeLayout>
+
+
+
+    <!--Third info Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_3_seen"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/reveal_1"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/revTV_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/reveal_section_3"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/reveal_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+
+        <TextView
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:text="Maya, 23"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="45sp"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/darkpink"
+                android:layout_below="@id/user_img"
+                />
+
+            <!--User Details Section-->
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:id="@+id/user_info"
+                android:layout_below="@id/user_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+
+
+                <!--Location Details-->
+
+                <ImageView
+                    android:id="@+id/user_loc_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user_loc_img"
+                    android:layout_below="@id/user_ed_img"
+                    android:layout_marginTop="0dp"
+                    />
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@id/user_loc_img"
+                    android:text="4 Miles Away"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/appblue"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"/>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>

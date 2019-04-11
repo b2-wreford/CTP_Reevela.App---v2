@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/circ2_img_layout">
+
+
+    <include layout="@layout/layout_top_tabs">
+
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/reveal_1"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center">
+
+
+
+</RelativeLayout>
+
+
+    <!--Second Image Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_2"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/reveal_1"
+        android:gravity="center">
+
+
+
+
+        <ImageView
+            android:id="@+id/circ2_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reveal_section_1"
+            android:src="@drawable/mayajama2"
+            android:padding="5dp">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/revTV_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            android:gravity="center"/>
+
+
+
+        <Button
+            android:id="@+id/reveal_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

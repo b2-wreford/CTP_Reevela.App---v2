@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<RelativeLayout
+    android:id="@+id/reveal_1_unseen"
+    android:layout_width="200dp"
+    android:layout_height="400dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginRight="2dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/reveal_section_1"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/darkpink"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/reveal_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+
+        />
+
+</RelativeLayout>
+
+<!--Second Image Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_2_unseen"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/reveal_1_unseen"
+        android:gravity="center">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/reveal_section_1"
+
+            />
+
+
+        <TextView
+            android:id="@+id/revTv_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/reveal_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <!--Third info Layout-->
+    <RelativeLayout
+        android:id="@+id/reveal_3_unseen"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/reveal_1_unseen"
+        android:gravity="center">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/reveal_section_3"
+
+            />
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="3"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/darkpink"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:gravity="center"/>
+
+        <Button
+            android:id="@+id/reveal_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

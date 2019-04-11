@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bluebackground"
+        android:orientation="vertical"
+        android:translationX="0dp"
+        android:translationY="0dp">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logoapp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logout_image">
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

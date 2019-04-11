@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_eye"
+        android:icon="@drawable/eye"
+        android:title="Reveal"/>
+
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/users"
+        android:title="Matches"/>
+
+    <item
+        android:id="@+id/nav_games"
+        android:icon="@drawable/user_game_img"
+        android:title="Games"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+
+
+</menu>

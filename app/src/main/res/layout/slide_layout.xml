@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="472dp"
+        app:srcCompat="@drawable/eye"
+        android:alpha="0.8"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="405dp"
+        android:text="Heading"
+        android:textColor="@color/transparentWhite"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="180dp"
+        android:textColor="@color/transparentWhite"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:text="Description Description Description Description" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/dots"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginEnd="153dp"-->
+        <!--android:layout_marginBottom="85dp"-->
+        <!--android:layout_marginLeft="200dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+</RelativeLayout>

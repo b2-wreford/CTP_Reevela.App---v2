@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.benwr.reevelaapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!--ADD ACTIVITY EVERYTIME NEW ONE IS CREATED TO STOP ERRORS-->
+        <activity android:name=".Matches.matches_activity"></activity>
+        <activity android:name=".Settings.settings_activity"></activity>
+        <activity android:name=".Settings.settings_activity_accountsettings"></activity>
+        <activity android:name=".Games.games_activity"></activity>
+        <activity android:name=".Games.games_activity_newchall"></activity>
+        <activity android:name=".Games.games_activity_exgames"></activity>
+        <activity android:name=".Games.games_activity_prefgames"></activity>
+        <activity android:name=".Games.game_activity_TTT"></activity>
+        <activity android:name=".Games.games_activity_selectOPP"></activity>
+        <activity android:name=".Games.games_activity_selectGAME"></activity>
+        <activity android:name=".Games.game_activity_fb"></activity>
+        <activity android:name=".Matches.matches_chat_activity"></activity>
+        <activity android:name=".Matches.matches_userprof_activity"></activity>
+        <activity android:name=".Reveal.reveal_activity_large_image"></activity>
+        <activity android:name=".Reveal.reveal_activity_large_imagetwo"></activity>
+        <activity android:name=".Reveal.reveal_activity_details_three_large"></activity>
+        <activity android:name=".Login.login_activity"></activity>
+        <activity android:name=".Login.register_activity"></activity>
+        <activity android:name=".Reveal.reveal_activity_test"></activity>
+        <activity android:name=".Chat.StartActivity"></activity>
+        <activity android:name=".Chat.MessageActivity"></activity>
+        <activity android:name=".Chat.ChatMainActivity"></activity>
+        <activity android:name=".Chat.ChatMainActivity2"></activity>
+        <activity android:name=".BoardingScreenActivity"></activity>
+
+
+
+        <service android:name=".Notifictations.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+        <service android:name=".Notifictations.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+
+        <!--<activity android:name=".Reveal.reveal_activity_sectionone"></activity>-->
+
+    </application>
+
+</manifest>

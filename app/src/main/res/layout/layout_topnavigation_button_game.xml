@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bluebackground"
+        android:orientation="vertical"
+        android:translationX="0dp"
+        android:translationY="0dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backbutton_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backbutton"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logoapp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/challenge_Btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_challenge"/>
+
+</RelativeLayout>

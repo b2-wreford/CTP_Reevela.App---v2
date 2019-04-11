@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--Top Bar -->
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_top_tabs" />
+
+    </RelativeLayout>
+
+    <!--Bottom Nav -->
+    <include layout="@layout/layout_bottom_navigation" />
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/chat_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluebackground"
+        android:layout_below="@id/top_bar_layout"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/darkpink"
+        app:tabTextColor="@color/white"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/chat_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_tab_layout"
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+<!--<RelativeLayout-->
+<!--android:layout_width="480dp"-->
+<!--android:layout_height="90dp"-->
+<!--android:layout_marginLeft="40dp"-->
+<!--android:layout_marginTop="40dp"-->
+<!--android:layout_marginRight="40dp"-->
+<!--android:background="@drawable/rounded_buttonsellopp"-->
+<!--android:gravity="center">-->
+
+
+<!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Matches"-->
+    <!--android:textColor="@color/darkpink"-->
+    <!--android:textSize="35sp"-->
+    <!--app:fontFamily="@font/josefin_sans_bold" />-->
+
+<!--</RelativeLayout>-->
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_bar_layout">
+            <include layout="@layout/layout_top_navlogout"/>
+
+        </RelativeLayout>
+
+        <!--Middle Body -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_bar_layout"
+            android:id="@+id/bottom_bar_layout"
+            android:layout_marginTop="10dp">
+
+            <include layout="@layout/settings_scrollview_main"/>
+
+            <include layout="@layout/layout_center_body"/>
+
+        </RelativeLayout>
+
+        <!--Bottom Nav -->
+
+        <include layout="@layout/layout_bottom_navigation"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+

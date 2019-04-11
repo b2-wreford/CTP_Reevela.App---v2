@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--TOP NAVIGATION-->
+    <include layout="@layout/layout_topnavigation_button">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+
+        >
+
+        <TextView
+            android:id="@+id/text_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="You have no existing games."
+            android:textSize="30sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textColor="@color/darkpink"
+            android:layout_marginTop="180dp"
+            android:alpha="1"/>
+
+        <Button
+            android:id="@+id/chall_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Challenge"
+            android:layout_below="@id/text_instruction"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_buttonthin"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

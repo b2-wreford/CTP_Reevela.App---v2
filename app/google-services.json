@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "643086330217",
+    "firebase_url": "https://reevelaapp.firebaseio.com",
+    "project_id": "reevelaapp",
+    "storage_bucket": "reevelaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643086330217:android:52fe96f079af34ef",
+        "android_client_info": {
+          "package_name": "com.example.benwr.reevelaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643086330217-rn3p6o0nt44p3d74cf7habnbv25kfhu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.benwr.reevelaapp",
+            "certificate_hash": "34f0eed8ef9a8d2b17d6defbf7082ee9dfa613fc"
+          }
+        },
+        {
+          "client_id": "643086330217-76urp4klt50ql8pcquk2q155lbeto7h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHcAIzE6XX0wdCF5y4a6GgsZ6PSJ8FnzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643086330217-76urp4klt50ql8pcquk2q155lbeto7h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
